@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Property Guru</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h2 {
+            text-align: center;
+            color: orange;
+        }
+        label {
+            color: grey;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: orange;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: darkorange;
+        }
+        .options {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .options a {
+            color: grey;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        .options a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- Back Button -->
+    <a href="Home.html" class="back-button">← Back</a> <!-- Back navigation link -->
+        <h2>Login to Property Guru</h2>
+        <form action="/login" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Login">
+        </form>
+
+        <div class="options">
+            <a href="#">Forgot Password?</a> | <a href="#">Sign Up</a>
+        </div>
+    </div>
+ 
+</body>
+</html>

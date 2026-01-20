@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Rent - Property Guru</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: orange; /* Orange color */
+            padding: 20px;
+            color: white;
+            display: flex; /* Use flexbox */
+            justify-content: space-between; /* Space between logo and nav */
+            align-items: center; /* Center items vertically */
+        }
+        .logo {
+            display: flex;
+            align-items: center; /* Center the logo and text vertically */
+        }
+        .logo img {
+            height: 50px; /* Adjust height as needed */
+            margin-right: 10px; /* Space between logo and text */
+        }
+        nav {
+            margin-top: 10px;
+        }
+        .navbar {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar li {
+            display: inline;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #e68a00; /* Darker orange for hover */
+        }
+        .main-section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: rgb(33, 32, 44);
+            text-align: center;
+        }
+        .properties-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px; /* Space between property items */
+        }
+        .property-item {
+            border: 1px solid #ccc; /* Border around property */
+            border-radius: 8px;
+            overflow: hidden; /* Round corners */
+            text-align: center; /* Center text */
+            padding: 10px;
+            background-color: #fafafa; /* Light background */
+        }
+        .property-item img {
+            width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .property-item h3 {
+            margin: 10px 0; /* Space above and below property title */
+        }
+        .price {
+            color: rgb(216, 127, 109);
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Property Guru Website logo 3.png" alt="STAY WITH US!!"> <!-- Logo Image -->
+            <h1>Property Guru</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact Us.html">To Rent</a></li>
+                <li><a href="rent.html">To Buy</a></li>
+                <li><a href="buy.html">Stands</a></li>
+                <li><a href="lands.html">Lands</a></li>
+                <li><a href="agents.html">Find agent</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-section">
+        <h2>Properties to Rent</h2>
+        <div class="properties-container">
+            <!-- Property 1 -->
+            <div class="property-item">
+                <img src="img/rental (1).jpg" alt="House 1">
+                <h3>Offices to let</h3>
+                <h4>Msasa, Harare East</h4>
+                <h2 class="price">USD 1800 PER month</h2>
+            </div>
+            <!-- Property 2 -->
+            <div class="property-item">
+                <img src="img/rental (2).jpg" alt="House 2">
+                <h3>Commercial property for rent in Avondale</h3>
+                <h4>Avondale, Harare North</h4>
+                <h2 class="price">USD 4000 PER month</h2>
+            </div>
+            <!-- Property 3 -->
+            <div class="property-item">
+                <img src="img/rental (3).jpg" alt="House 3">
+                <h3>Offices to let</h3>
+                <h4>Chisipiti, Harare North</h4>
+                <h2 class="price">USD 1700 PER month</h2>
+            </div>
+            <!-- Property 4 -->
+            <div class="property-item">
+                <img src="img/rental (4).jpg" alt="House 4">
+                <h3>Modern 4 Bedroom Townhouse - Borrowdale</h3>
+                <h4>Borrowdale, Harare North</h4>
+                <h2 class="price">USD 2500 PER month</h2>
+            </div>
+            <!-- Property 5 -->
+            <div class="property-item">
+                <img src="img/rental (5).jpg" alt="House 5">
+                <h3>Contemporary 3-Bedroom House for Rent</h3>
+                <h4>Borrowdale West, Harare East</h4>
+                <h2 class="price">USD 1850 PER month</h2>
+            </div>
+            <!-- Property 6 -->
+            <div class="property-item">
+                <img src="img/rental (6).jpg" alt="House 6">
+                <h3>3-Bedroom House for Rent</h3>
+                <h4>Msasa, Harare East</h4>
+                <h2 class="price">USD 2000 PER month</h2>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Property Guru. All rights reserved.</p>
+    </footer>
+</body>
+</html>

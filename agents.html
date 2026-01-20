@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Agencies - Property Guru</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: orange;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        header .logo img {
+            max-width: 50px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            background-color: transparent;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Menu icon for small screens */
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 25px;
+        }
+        .menu-icon div {
+            width: 30px;
+            height: 3px;
+            background-color: white;
+        }
+
+        /* Container layout for agencies */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .agency {
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .agency img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .agency h2 {
+            color: orange;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .agency p {
+            color: grey;
+            line-height: 1.6;
+        }
+
+        .extra-info {
+            display: none;
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+        footer {
+            background-color: grey;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+                flex-direction: column;
+                background-color: orange;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+            nav ul.active {
+                display: flex;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .menu-icon {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .agency {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .agency img {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="img/Property Guru Website logo 3.png" alt="STAY WITH US!!"> <!-- Logo Image -->
+        <h1>Property Guru</h1>
+    </div>
+    <nav>
+        <ul class="navbar">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact Us.html">To Rent</a></li>
+            <li><a href="rent.html">To Buy</a></li>
+            <li><a href="buy.html">Stands</a></li>
+            <li><a href="lands.html">Lands</a></li>
+            <li><a href="agents.html">Find agent</a></li>
+        </ul>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- Peejay Properties -->
+    <div class="agency">
+        <img src="img/Peejay Properties.jpg" alt="Peejay Properties">
+        <h2 onclick="toggleInfo('peejay')">Peejay Properties</h2>
+        <p>Peejay Properties specializes in luxury homes and commercial properties.</p>
+        <div id="peejay" class="extra-info">
+            <p><strong>Contact:</strong> 123-456-7890</p>
+            <p><strong>Houses available:</strong> 25</p>
+        </div>
+    </div>
+
+    <!-- Kath Ceera -->
+    <div class="agency">
+        <img src="img/Kath Ceera.jpg" alt="Kath Ceera">
+        <h2 onclick="toggleInfo('kath')">Kath Ceera</h2>
+        <p>Kath Ceera offers personalized services for both residential and commercial buyers.</p>
+        <div id="kath" class="extra-info">
+            <p><strong>Contact:</strong> 234-567-8901</p>
+            <p><strong>Houses available:</strong> 12</p>
+        </div>
+    </div>
+
+    <!-- Tee Properties -->
+    <div class="agency">
+        <img src="img/Tee properties.jpg" alt="Tee Properties">
+        <h2 onclick="toggleInfo('tee')">Tee Properties</h2>
+        <p>Tee Properties offers a wide range of affordable housing options.</p>
+        <div id="tee" class="extra-info">
+            <p><strong>Contact:</strong> 345-678-9012</p>
+            <p><strong>Houses available:</strong> 40</p>
+        </div>
+    </div>
+
+    <!-- Shame Oss -->
+    <div class="agency">
+        <img src="img/Shame Oss.jpg" alt="Shame Oss">
+        <h2 onclick="toggleInfo('shame')">Shame Oss</h2>
+        <p>Shame Oss caters to high-end clients looking for prime properties.</p>
+        <div id="shame" class="extra-info">
+            <p><strong>Contact:</strong> 456-789-0123</p>
+            <p><strong>Houses available:</strong> 30</p>
+        </div>
+    </div>
+
+    <!-- Geld Shop -->
+    <div class="agency">
+        <img src="img/Geld Shop.jpg" alt="Geld Shop">
+        <h2 onclick="toggleInfo('geld')">Geld Shop</h2>
+        <p>Geld Shop offers modern properties and smart investment opportunities.</p>
+        <div id="geld" class="extra-info">
+            <p><strong>Contact:</strong> 567-890-1234</p>
+            <p><strong>Houses available:</strong> 18</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2024 Property Guru | All Rights Reserved</p>
+</footer>
+
+<script>
+    function toggleInfo(id) {
+        const element = document.getElementById(id);
+        if (element.style.display === "block") {
+            element.style.display = "none";
+        } else {
+            element.style.display = "block";
+        }
+    }
+
+    // Function to toggle the menu visibility
+    function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>

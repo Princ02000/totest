@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Property - Property Guru</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: orange; /* Orange color */
+            padding: 20px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px; /* Adjust height as needed */
+            margin-right: 10px; /* Space between logo and text */
+        }
+        .logo h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            margin-left: auto;
+        }
+        .navbar {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar li {
+            display: inline;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #e68a00; /* Darker orange for hover */
+        }
+
+        .main-section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ensure the columns adjust nicely */
+            gap: 20px; /* Space between property items */
+        }
+        .property {
+            border: 1px solid #ccc; /* Border around property */
+            border-radius: 8px;
+            overflow: hidden; /* Round corners */
+            text-align: center; /* Center text */
+        }
+        .property img {
+            width: 100%; /* Responsive image */
+            height: 250px; /* Ensure all images are the same height */
+            object-fit: cover; /* Crop images to fit without distorting */
+        }
+        .property h3 {
+            margin: 10px 0; /* Space above and below property title */
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ff9800; /* Orange color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Property Guru Website logo 3.png" alt="STAY WITH US!!"> <!-- Logo Image -->
+            <h1>Property Guru</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact Us.html">To Rent</a></li>
+                <li><a href="rent.html">To Buy</a></li>
+                <li><a href="buy.html">Stands</a></li>
+                <li><a href="lands.html">Lands</a></li>
+                <li><a href="agents.html">Find agent</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-section">
+        <h2>Available Properties for Sale</h2>
+        <p>Explore our wide range of properties available for purchase, from affordable family homes to luxury estates.</p>
+
+        <div class="grid-container">
+            <!-- Property 1 -->
+            <div class="property">
+                <img src="img/buy (1).jpg" alt="Property for Sale 1">
+                <h3>Contemporary Villa</h3>
+                <p>Price: $500,000</p>
+                <p>Size: 3,000 sq ft</p>
+                <p>Bedrooms: 4</p>
+                <p>"This stunning villa combines luxury and comfort, perfect for a growing family!"</p>
+            </div>
+            <!-- Property 2 -->
+            <div class="property">
+                <img src="img/buy (7).jpg" alt="Property for Sale 2">
+                <h3>Cozy Family Home</h3>
+                <p>Price: $350,000</p>
+                <p>Size: 2,000 sq ft</p>
+                <p>Bedrooms: 3</p>
+                <p>"Feel at home in this cozy family home, ideal for creating lasting memories!"</p>
+            </div>
+            <!-- Property 3 -->
+            <div class="property">
+                <img src="img/buy (9).jpg" alt="Property for Sale 3">
+                <h3>Luxury Mansion</h3>
+                <p>Price: $1,200,000</p>
+                <p>Size: 5,000 sq ft</p>
+                <p>Bedrooms: 6</p>
+                <p>"Live the life of luxury in this magnificent mansion with all the amenities!"</p>
+            </div>
+            <!-- Property 4 -->
+            <div class="property">
+                <img src="img/buy.jpg" alt="Property for Sale 4">
+                <h3>Charming Bungalow</h3>
+                <p>Price: $250,000</p>
+                <p>Size: 1,500 sq ft</p>
+                <p>Bedrooms: 2</p>
+                <p>"This charming bungalow is perfect for first-time buyers or as a cozy retreat!"</p>
+            </div>
+            <!-- Property 5 -->
+            <div class="property">
+                <img src="img/buy (2).jpg" alt="Property for Sale 5">
+                <h3>Modern Apartment</h3>
+                <p>Price: $300,000</p>
+                <p>Size: 1,800 sq ft</p>
+                <p>Bedrooms: 2</p>
+                <p>"A stylish apartment in the heart of the city, perfect for urban living!"</p>
+            </div>
+            <!-- Property 6 -->
+            <div class="property">
+                <img src="img/buy (4).jpg" alt="Property for Sale 6">
+                <h3>Spacious Townhouse</h3>
+                <p>Price: $450,000</p>
+                <p>Size: 2,500 sq ft</p>
+                <p>Bedrooms: 4</p>
+                <p>"This spacious townhouse offers modern amenities and a great location!"</p>
+            </div>
+            <!-- Property 7 -->
+            <div class="property">
+                <img src="img/buy (8).jpg" alt="Property for Sale 7">
+                <h3>Sunny Cottage</h3>
+                <p>Price: $200,000</p>
+                <p>Size: 1,200 sq ft</p>
+                <p>Bedrooms: 2</p>
+                <p>"A lovely cottage filled with sunshine, perfect for a small family!"</p>
+            </div>
+            <!-- Property 8 -->
+            <div class="property">
+                <img src="img/buy (11).jpg" alt="Property for Sale 8">
+                <h3>Elegant Estate</h3>
+                <p>Price: $900,000</p>
+                <p>Size: 4,500 sq ft</p>
+                <p>Bedrooms: 5</p>
+                <p>"An elegant estate with expansive grounds and luxurious features!"</p>
+            </div>
+            <!-- Property 9 -->
+            <div class="property">
+                <img src="img/buy (12).jpg" alt="Property for Sale 9">
+                <h3>Modern Loft</h3>
+                <p>Price: $375,000</p>
+                <p>Size: 2,200 sq ft</p>
+                <p>Bedrooms: 3</p>
+                <p>"A contemporary loft with open spaces and stunning views!"</p>
+            </div>
+            <!-- Property 10 -->
+            <div class="property">
+                <img src="img/buy (13).jpg" alt="Property for Sale 10">
+                <h3>Rustic Retreat</h3>
+                <p>Price: $280,000</p>
+                <p>Size: 1,600 sq ft</p>
+                <p>Bedrooms: 3</p>
+                <p>"A rustic retreat surrounded by nature, ideal for peace and

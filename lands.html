@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Property - Property Guru</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        header {
+            background-color: orange; /* Orange color */
+            padding: 20px;
+            color: white;
+            display: flex; /* Use flexbox */
+            justify-content: space-between; /* Space between logo and nav */
+            align-items: center; /* Center items vertically */
+        }
+        .logo {
+            display: flex;
+            align-items: center; /* Center the logo and text vertically */
+        }
+        .logo img {
+            height: 50px; /* Adjust height as needed */
+            margin-right: 10px; /* Space between logo and text */
+        }
+        nav {
+            margin-top: 10px;
+        }
+        .navbar {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar li {
+            display: inline;
+        }
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #e68a00; /* Darker orange for hover */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .stands-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create flexible columns */
+            gap: 20px;
+        }
+        .stand {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .stand img {
+            width: 100%;
+            height: 200px; /* Set a fixed height */
+            object-fit: cover; /* Ensure images are cropped to fit while maintaining aspect ratio */
+            border-radius: 5px;
+        }
+        .stand-details {
+            margin-top: 15px;
+        }
+        .stand-details h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .stand-details p {
+            color: #666;
+            margin: 5px 0;
+        }
+        .stand-details strong {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Property Guru Website logo 3.png" alt="STAY WITH US!!"> <!-- Logo Image -->
+            <h1>Property Guru</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact Us.html">To Rent</a></li>
+                <li><a href="rent.html">To Buy</a></li>
+                <li><a href="buy.html">Stands</a></li>
+                <li><a href="lands.html">Lands</a></li>
+                <li><a href="agents.html">Find agent</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="container">
+            <h1>Stands for Sale</h1>
+            
+            <div class="stands-grid">
+                <div class="stand">
+                    <img src="img/stand1 (1).jpg" alt="Madokero North">
+                    <div class="stand-details">
+                        <h2>Madokero North</h2>
+                        <p><strong>Price:</strong> USD 28,000</p>
+                        <p><strong>Size:</strong> 1300 m²</p>
+                        <p><strong>Location:</strong> Harare</p>
+                    </div>
+                </div>
+    
+                <div class="stand">
+                    <img src="img/stand1 (2).jpg" alt="Mzari">
+                    <div class="stand-details">
+                        <h2>Mzari</h2>
+                        <p><strong>Price:</strong> USD 19,000</p>
+                        <p><strong>Size:</strong> 1200 m²</p>
+                        <p><strong>Location:</strong> Chinhoyi</p>
+                    </div>
+                </div>
+                <div class="stand">
+                    <img src="img/stand1 (3).jpg" alt="Chitungwiza B">
+                    <div class="stand-details">
+                        <h2>Chitungwiza B</h2>
+                        <p><strong>Price:</strong> USD 17,000</p>
+                        <p><strong>Size:</strong> 900 m²</p>
+                        <p><strong>Location:</strong> Harare</p>
+                    </div>
+                </div>
+    
+                <div class="stand">
+                    <img src="img/stand1 (4).jpg" alt="Adelaide Park">
+                    <div class="stand-details">
+                        <h2>Adelaide Park</h2>
+                        <p><strong>Price:</strong> USD 30,000</p>
+                        <p><strong>Size:</strong> 1600 m²</p>
+                        <p><strong>Location:</strong> Gweru North</p>
+                    </div>
+                </div>
+    
+                <div class="stand">
+                    <img src="img/stand1 (5).jpg" alt="Rujeko">
+                    <div class="stand-details">
+                        <h2>Rujeko</h2>
+                        <p><strong>Price:</strong> USD 21,000</p>
+                        <p><strong>Size:</strong> 1100 m²</p>
+                        <p><strong>Location:</strong> Masvingo</p>
+                    </div>
+                </div>
+    
+                <div class="stand">
+                    <img src="img/stand1 (6).jpg" alt="Dangamvura">
+                    <div class="stand-details">
+                        <h2>Dangamvura</h2>
+                        <p><strong>Price:</strong> USD 39,000</p>
+                        <p><strong>Size:</strong> 2100 m²</p>
+                        <p><strong>Location:</strong> Mutare</p>
+                    </div>
+                </div>
+    
+                <div class="stand">
+                    <img src="img/stand1 (7).jpg" alt="Avondale">
+                    <div class="stand-details">
+                        <h2>Avondale</h2>
+                        <p><strong>Price:</strong> USD 53,000</p>
+                        <p><strong>Size:</strong> 3645 m²</p>
+                        <p><strong>Location:</strong> Harare</p>
+                    </div>
+                </div>
+    
+                <div class="stand">
+                    <img src="img/stand1 (8).jpg" alt="Greendale">
+                    <div class="stand-details">
+                        <h2>Greendale</h2>
+                        <p><strong>Price:</strong> USD 41,000</p>
+                        <p><strong>Size:</strong> 2980 m²</p>
+                        <p><strong>Location:</strong> Harare</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+</body>
+</html>
